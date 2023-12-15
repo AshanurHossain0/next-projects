@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6;
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--bg);
+  color: var(--textColor);
+}
+
+.wrapper {
+  max-width: 1536px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: var(--softBg);
+}
+
+@media screen and (max-width:1536px){
+  .wrapper{
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .wrapper{
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .wrapper{
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .wrapper{
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width:640px){
+  .wrapper{
+    max-width: 475px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
