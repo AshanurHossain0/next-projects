@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .links {
+    font-size: 18px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -39,9 +40,24 @@
 }
 
 @media screen and (max-width:768px) {
+    .links {
+        font-size: 14px;
+        gap: 15px;
+    }
     .logo {
         font-size: 18px;
     }
+    .container{
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width:640px) {}
+@media screen and (max-width:640px) {
+    .logo {
+        font-size: 15px;
+    }
+    .links {
+        font-size: 10px;
+        gap: 10px;
+    }
+}

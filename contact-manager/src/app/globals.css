@@ -15,8 +15,10 @@ body {
   --textColor: #ddd;
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
+  --xsoftTextColor: #a6a6a6a6;
   overflow-x: hidden;
 }
+
 
 .container {
   min-height: 100vh;
@@ -32,39 +34,137 @@ body {
   margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
-  background-color: var(--softBg);
+  background-color: #000000;
 }
 
-@media screen and (max-width:1536px){
-  .wrapper{
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_img{
+  height: 400px;
+}
+
+.comp_image{
+  width: 100%;
+  margin: auto;
+}
+
+.cover_heading{
+  font-size: 45px;
+  text-align: center;
+  color: var(--softTextColor);
+}
+
+.cover_sub_heading{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: var(--softTextColor);
+}
+.cover_paragraph{
+  margin-top: 50px;
+  font-size: 20px;
+  color: var(--xsoftTextColor);
+}
+
+@media screen and (max-width:1536px) {
+  .wrapper {
     max-width: 1366px;
   }
-}
-
-@media screen and (max-width:1200px){
-  .wrapper{
-    max-width: 1024px;
+  .mobile_img{
+    height: 380px;
+  }
+  .cover_heading{
+    font-size: 41px;
+  }
+  
+  .cover_sub_heading{
+    font-size: 24px;
   }
 }
 
-@media screen and (max-width:1024px){
-  .wrapper{
+@media screen and (max-width:1200px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+  .mobile_img{
+    height: 360px;
+  }
+  .cover_heading{
+    font-size: 37px;
+  }
+  
+  .cover_sub_heading{
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .wrapper {
     max-width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }
-}
-
-@media screen and (max-width:768px){
-  .wrapper{
-    max-width: 640px;
+  .mobile_img{
+    height: 340px;
+  }
+  .cover_heading{
+    font-size: 33px;
+  }
+  
+  .cover_sub_heading{
+    font-size: 21px;
   }
 }
 
-@media screen and (max-width:640px){
-  .wrapper{
+@media screen and (max-width:768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+  .mobile_img{
+    height: 300px;
+  }
+  .cover_heading{
+    font-size: 29px;
+  }
+  
+  .cover_sub_heading{
+    font-size: 19px;
+  }
+  .cover_paragraph{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .wrapper {
     max-width: 475px;
     padding-left: 10px;
     padding-right: 10px;
+
+  }
+  .mobile_img{
+    display: none;
+  }
+  .cover_heading{
+    font-size: 25px;
+  }
+  
+  .cover_sub_heading{
+    font-size: 17px;
+  }
+  .cover_paragraph{
+    font-size: 12px;
   }
 }
