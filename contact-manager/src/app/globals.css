@@ -14,8 +14,11 @@ body {
   --bg: #0f172a;
   --textColor: #ddd;
   --softBg: #1f273a;
-  --softTextColor: #a6a6a6;
-  --xsoftTextColor: #a6a6a6a6;
+  --softTextColor: rgb(100 116 139);
+  --xsoftTextColor: rgba(100, 116, 139, 0.708);
+  --buttonBgColor:rgb(23 37 84);
+  --buttonColor:rgb(148 163 184);
+  --hovButtonColor:#222222;
   overflow-x: hidden;
 }
 
@@ -32,12 +35,13 @@ body {
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  
   background-color: #000000;
 }
 
 .home{
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,6 +115,9 @@ body {
 @media screen and (max-width:1024px) {
   .wrapper {
     max-width: 768px;
+    
+  }
+  .home{
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -150,9 +157,12 @@ body {
 @media screen and (max-width:640px) {
   .wrapper {
     max-width: 475px;
+    
+
+  }
+  .home{
     padding-left: 10px;
     padding-right: 10px;
-
   }
   .mobile_img{
     display: none;

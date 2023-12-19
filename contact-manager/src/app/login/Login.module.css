@@ -1,0 +1,144 @@
+.login_container {
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.image {
+    width: 500px;
+}
+
+.log_box {
+    /* border: 2px solid var(--softTextColor); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log_icon {
+    width: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.input {
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid var(--softTextColor);
+    color: var(--softTextColor);
+    padding: 2px;
+    font-size: 21px;
+}
+
+.input::placeholder {
+    color: var(--xsoftTextColor);
+}
+
+.button {
+    font-size: 20px;
+    width: 100%;
+    color: var(--buttonColor);
+    background-color: var(--buttonBgColor);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1536px) {
+    .form {
+        width: 70%;
+        gap: 30px;
+    }
+    .log_icon {
+        width: 19px;
+    }
+    .input {
+        font-size: 19px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .form {
+        width: 100%;
+        gap: 30px;
+    }
+    .log_icon {
+        width: 18px;
+    }
+    .input {
+        font-size: 17px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .log_icon {
+        width: 17px;
+    }
+    .input {
+        font-size: 16px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 6px;
+        border-radius: 3px;
+    }
+    .image {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form {
+        width: 60%;
+        gap: 20px;
+    }
+    .log_icon {
+        width: 16px;
+    }
+    .input {
+        font-size: 15px;
+        padding: 1px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 4px;
+        border-radius: 2px;
+    }
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .form {
+        width: 80%;
+    }
+    .log_icon {
+        width: 15px;
+    }
+    .input {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 13px;
+        padding: 3px;
+    }
+}

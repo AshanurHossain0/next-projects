@@ -4,6 +4,8 @@
     justify-content: space-between;
     height: 70px;
     margin-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .links {
@@ -17,7 +19,7 @@
     font-size: 25px;
 }
 
-.link:hover{
+.link:hover {
     background-color: #222222;
 }
 
@@ -34,28 +36,45 @@
 }
 
 @media screen and (max-width:1024px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .logo {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width:768px) {
+    .container {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
     .links {
         font-size: 14px;
         gap: 15px;
     }
+
     .logo {
         font-size: 18px;
     }
-    .container{
+
+    .container {
         margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width:640px) {
+    .home{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .logo {
         font-size: 15px;
     }
+
     .links {
         font-size: 10px;
         gap: 10px;
